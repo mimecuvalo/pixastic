@@ -58,6 +58,6 @@ Pixastic.Actions.crop = {
 	checkSupport : function() {
 		return Pixastic.Client.hasCanvas();
 	}
-}
+};
 
 

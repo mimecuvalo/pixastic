@@ -75,5 +75,4 @@ Pixastic.Actions.brightness = {
 	checkSupport : function() {
 		return Pixastic.Client.hasCanvasImageData();
 	}
-}
-
+};

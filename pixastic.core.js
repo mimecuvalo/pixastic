@@ -21,7 +21,7 @@ var Pixastic = (function() {
 				handlerDone = true;
 				handler();
 			}
-		}
+		};
 		document.write("<"+"script defer src=\"//:\" id=\"__onload_ie_pixastic__\"></"+"script>");
 		var script = document.getElementById("__onload_ie_pixastic__");
 		script.onreadystatechange = function() {
@@ -29,7 +29,7 @@ var Pixastic = (function() {
 				script.parentNode.removeChild(script);
 				execHandler();
 			}
-		}
+		};
 		if (document.addEventListener)
 			document.addEventListener("DOMContentLoaded", execHandler, false); 
 		addEvent(window, "load", execHandler);
@@ -66,7 +66,7 @@ var Pixastic = (function() {
 					} else {
 						dataImg.onload = function() {
 							for (var a=0;a<actions.length;a++) {
-								var res = Pixastic.applyAction(el, el, actions[a], null)
+								var res = Pixastic.applyAction(el, el, actions[a], null);
 								if (res) 
 									el = res;
 							}
@@ -323,7 +323,7 @@ var Pixastic = (function() {
 				height : h,
 				useData : true,
 				options : options
-			}
+			};
 
 			// Ok, let's do it!
 
@@ -388,7 +388,7 @@ var Pixastic = (function() {
 					return res;
 				} else {
 					dataImg.onload = function() {
-						var res = Pixastic.applyAction(img, dataImg, actionName, options)
+						var res = Pixastic.applyAction(img, dataImg, actionName, options);
 						if (callback) callback(res);
 					}
 				}

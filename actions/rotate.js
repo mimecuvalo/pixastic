@@ -48,6 +48,6 @@ Pixastic.Actions.rotate = {
 	checkSupport : function() {
 		return Pixastic.Client.hasCanvas();
 	}
-}
+};
 
 
